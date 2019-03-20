@@ -50,4 +50,13 @@ function novoItem() {
     
     // Reseta valor do input
     document.getElementById('todo').value = "";
+
+    // Remover item ao clicar
+    trash.onclick = removerItem;
+}
+
+// Remover item
+function removerItem() {
+    // Pega o elemento li e remove
+    this.parentElement.remove();    
 }
