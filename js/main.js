@@ -11,6 +11,7 @@ function montarPagina() {
     // Botão inserir tarefa
     var btnToDo = document.createElement('button');
     btnToDo.setAttribute('onclick','novoItem()');
+    btnToDo.setAttribute('id','btn-todo');
     btnToDo.innerHTML = 'Add';
     
     // Lista de tarefas

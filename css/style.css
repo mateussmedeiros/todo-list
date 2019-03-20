@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body { max-width: 400px; }
+
+h1 { text-align: center; }
+
+#app { margin: 0 auto; }
+
+#todo {
+    width: 80%;
+    height: 30px;
+    padding: 5px 8px;
+    font-size: .85em;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+}
+
+#btn-todo {
+    width: 50px;
+    height: 30px;
+    float: right;
+    background: #00abd7;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+}
+
+#btn-remove {
+    display: block;
+    height: 30px;
+    margin: 10px auto;
+    padding: 5px 15px;
+    background: #555;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+}
+
+#list li {
+    width: 100%;
+    margin-bottom: 20px;
+    clear: both;
+}
+
+#list li:hover { background: #eee; }
+
+#trash {
+    padding: 5px 10px;
+    float: right;
+    background: #dd0000;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+}
