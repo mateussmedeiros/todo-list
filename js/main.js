@@ -7,7 +7,8 @@ function montarPagina() {
     var iptToDo = document.createElement('input');
     iptToDo.setAttribute('type','text');
     iptToDo.setAttribute('id','todo');
-    
+    iptToDo.setAttribute('placeholder','Adicionar uma nova tarefa');
+
     // Botão inserir tarefa
     var btnToDo = document.createElement('button');
     btnToDo.setAttribute('onclick','novoItem()');
