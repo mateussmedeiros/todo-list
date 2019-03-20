@@ -50,7 +50,7 @@ function novoItem() {
     // Se sim, adiciona valor na lista
     // Se não, exibe uma mensagem de erro
     if(item.length >= 1) {
-        li.appendChild(document.createTextNode(item));
+        li.appendChild(document.createTextNode(item)); // Cria um nó de texto ao elemento li
         li.appendChild(trash);
         list.appendChild(li);
     } else {
@@ -66,7 +66,8 @@ function novoItem() {
 
 // Remover item
 function removerItem() {
-    // Pega o elemento li e remove
+    // Seleciona o elemento pai (li) do ícone de exclusão
+    // Método remove() remove o elemento
     this.parentElement.remove();    
 }
 
