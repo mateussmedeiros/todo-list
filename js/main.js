@@ -16,11 +16,18 @@ function montarPagina() {
     // Lista de tarefas
     var list = document.createElement('ul');
     list.setAttribute('id', 'list');
+
+    // Botão excluir todas tarefas
+    var btnRmvAll = document.createElement('button');
+    btnRmvAll.setAttribute('onclick','removerTodos()');
+    btnRmvAll.setAttribute('id','btn-remove');
+    btnRmvAll.innerHTML = 'Limpar Lista';
     
-    // Inserir o input, botão e lista dentro da div
+    // Inserir todos elementos dentro da div app
     app.appendChild(iptToDo);
     app.appendChild(btnToDo);
     app.appendChild(list);
+    app.appendChild(btnRmvAll);
 }
 
 // Adicionar novo item
@@ -59,4 +66,12 @@ function novoItem() {
 function removerItem() {
     // Pega o elemento li e remove
     this.parentElement.remove();    
+}
+
+// Remover todos
+function removerTodos() {
+    // Selecionar lista
+    var list = document.getElementById('list');
+    // Limpa a lista
+    list.innerHTML = "";
 }
